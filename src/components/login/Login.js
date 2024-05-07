@@ -2,7 +2,7 @@ import React from 'react';
 import './login.css'; // Import your CSS file
 import PropTypes from 'prop-types';
 
-const Login = ({handleOnSubmit, handleOnChange, email, password}) => {
+const Login = ({handleOnSubmit, handleOnChange, email, password, switchform}) => {
     
 
   return (
@@ -42,7 +42,7 @@ const Login = ({handleOnSubmit, handleOnChange, email, password}) => {
          
         </form>
         <hr/>
-        <a href='/'>Forget Password?</a>
+        <a href='#!' onClick={() => switchform('reset')}>Forgot Password?</a>
       </div>
     </div>
   );
@@ -50,6 +50,7 @@ const Login = ({handleOnSubmit, handleOnChange, email, password}) => {
 Login.propTypes ={
     handleOnChange: PropTypes.func.isRequired,
     handleOnSubmit:PropTypes.func.isRequired,
+    switchform:PropTypes.func.isRequired,
     email:PropTypes.string.isRequired,
     password: PropTypes.string.isRequired,
 
