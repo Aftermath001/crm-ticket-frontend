@@ -1,0 +1,20 @@
+.navbar {
+    background-color: black;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Pushes NavLinks to the right */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ccc !important;
+  }
+  
