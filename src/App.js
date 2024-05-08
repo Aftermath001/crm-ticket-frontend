@@ -1,5 +1,6 @@
 import './App.css';
 import Layout from './layout/Layout';
+import Dashboard from './pages/dashboard/Dashboard';
 
 // eslint-disable-next-line
 // import Button from 'react-bootstrap/Button';
@@ -9,7 +10,9 @@ function App() {
   return (
     <div className="app">
       {/* <Entrypage /> */}
-      <Layout />
+      <Layout>
+        <Dashboard/>
+      </Layout>
     </div>
   );
 }

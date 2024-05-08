@@ -2,11 +2,22 @@ import React from 'react'
 import Header from './partials/Header'
 import Footer from './partials/Footer'
 
-function Layout() {
+function Layout({children}) {
   return (
-    <div>
+    <div className='layout'>
+      <header className='header'>
       <Header />
-      <Footer />
+      </header>
+
+      <main className='main'>
+        {children}
+      </main>
+
+      <footer className='footer'>
+        <Footer />
+      </footer>
+      
+      
     </div>
   )
 }
