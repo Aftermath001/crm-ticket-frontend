@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="app">
       {/* <Entrypage /> */}
-      <Layout />
+      <Layout>
+        Dashboard
+      </Layout>
     </div>
   );
 }
