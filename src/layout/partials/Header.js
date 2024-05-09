@@ -1,24 +1,23 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import Logo from '../../assets/img/LogoCRM.jpg';
 import './partials.css'; // Import your CSS file
+import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
-    <Navbar collapseOnSelect bg='black' variant='dark' expand='md'>
-      <Navbar.Brand>
-        <img src={Logo} alt='Logo' width='50px'/>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-          <Nav.Link href="/dashboard">Tickets</Nav.Link>
-          <Nav.Link href="/dashboard">Logout</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav className="navbar">
+      <div className="navbar-items">
+        <ResponsiveLink to="/dashboard">Dashboard</ResponsiveLink>
+        <ResponsiveLink to="/ticket">Tickets</ResponsiveLink>
+        <ResponsiveLink to="/">Logout</ResponsiveLink>
+      </div>
+    </nav>
   );
-}
+};
+
+const ResponsiveLink = ({ to, children }) => {
+  return (
+    <Link to={to}>{children}</Link>
+  );
+};
 
 export default Header;

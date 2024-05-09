@@ -1,20 +1,23 @@
 .navbar {
-    background-color: black;
-  }
-  
-  .navbar-brand img {
-    max-height: 50px;
-  }
-  
-  .navbar-nav {
-    margin-left: auto; /* Pushes NavLinks to the right */
-  }
-  
-  .navbar-nav .nav-link {
-    color: #fff !important;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ccc !important;
-  }
-  
+  background-color:white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  margin-left: 20px; /* Add margin between links */
+}
+
+.navbar-items a:hover {
+  color: #0056b3;
+}
