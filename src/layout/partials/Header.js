@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="navbar">
       <div className="navbar-items">
         <ResponsiveLink to="/dashboard">Dashboard</ResponsiveLink>
-        <ResponsiveLink to="/ticket">Tickets</ResponsiveLink>
+        <ResponsiveLink to="/tickets">Tickets</ResponsiveLink>
         <ResponsiveLink to="/">Logout</ResponsiveLink>
       </div>
     </nav>
