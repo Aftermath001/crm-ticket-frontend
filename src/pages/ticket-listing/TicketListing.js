@@ -35,7 +35,7 @@ const TicketListing = () => {
       </Row>
 
       <Row>
-        <Col>
+        <Col >
           <Button variant="info" className="button-add-ticket">
             Add New Ticket
           </Button>
