@@ -5,7 +5,7 @@ import Footer from './partials/Footer'
 function Layout({children}) {
   return (
     <div className='layout'>
-      <header className='header'>
+      <header className='header mb-2'>
       <Header />
       </header>
 
