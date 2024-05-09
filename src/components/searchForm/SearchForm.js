@@ -9,7 +9,7 @@ const SearchForm = ({handleOnChange,str}) => {
    <Form>
     <Form.Group as={Row}>
         <Form.Label column ms="2">Search:</Form.Label>
-        <Col ms="10">
+        <Col sm="10">
         <Form.Control
         name="searchStr"
         placeHolder="Search...."

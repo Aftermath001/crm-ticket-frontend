@@ -4,17 +4,27 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import SearchForm from '../../components/searchForm/SearchForm';
 import tickets from '../../assets/data/dummy.json';
 import TicketTable from '../../components/ticket-table/TicketTable';
-import './ticketListings.css'; // Import your CSS file
+import './ticketListings.css'; // Import CSS file
 
 const TicketListing = () => {
   const [str, setStr] = useState('');
+  const [dispTicket, setDispTicket] = useState(tickets);
 
-  useEffect(() => {}, [str]);
+  useEffect(() => {}, [str, dispTicket]);
 
   const handleOnChange = (e) => {
-    setStr(e.target.value);
-    console.log(e.target);
+    const { value } = e.target;
+    setStr(value)
+    // setStr(e.target.value);
+    searchTicket(value)
+    // console.log(e.target);
   };
+
+  const searchTicket = (sttr) => {
+    const displayTickets = tickets.filter(row=> row.subject.toLowerCase().
+    includes(sttr.toLowerCase()))
+    setDispTicket(displayTickets)
+  }
 
   return (
     <Container className="container">
@@ -38,11 +48,12 @@ const TicketListing = () => {
 
       <Row>
         <Col>
-          <TicketTable tickets={tickets} />
+          <TicketTable tickets={dispTicket} />
         </Col>
       </Row>
     </Container>
   );
 };
+
 
 export default TicketListing;

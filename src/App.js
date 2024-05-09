@@ -1,6 +1,6 @@
 import './App.css';
 import Layout from './layout/Layout';
-import AddTicket from './pages/new-ticket/AddTicket';
+// import AddTicket from './pages/new-ticket/AddTicket';
 import TicketListing from './pages/ticket-listing/TicketListing';
 // import Dashboard from './pages/dashboard/Dashboard';
 
