@@ -18,14 +18,14 @@ const Ticket = () => {
         alert("Form submitted")
     }
   return (
-    <Container>
+    <Container >
         <Row>
             <Col>
                 <BreadCrumbs page='Ticket'/>
             </Col>
         </Row>
 
-        <Row>
+        <Row className='tickets'>
             <Col className='text-weight-bolder text-secondary'>
                 <div className='subject'>Subject: {ticket.subject}</div>
                 <div className='date'>Date: {ticket.addedAt}</div>
