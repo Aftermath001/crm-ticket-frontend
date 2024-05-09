@@ -21,8 +21,7 @@ const TicketListing = () => {
   };
 
   const searchTicket = (sttr) => {
-    const displayTickets = tickets.filter(row=> row.subject.toLowerCase().
-    includes(sttr.toLowerCase()))
+    const displayTickets = tickets.filter(row=> row.subject.toLowerCase().includes(sttr.toLowerCase()))
     setDispTicket(displayTickets)
   }
 

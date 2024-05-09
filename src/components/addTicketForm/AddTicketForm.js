@@ -46,7 +46,7 @@ const AddTicketForm = ({ handleOnSubmit, handleOnChange,formData,frmDataError })
           />
         </div>
 
-        <button type="submit" className="login-btn">
+        <button type="submit" className="login-btn" variant='outline-info'>
           Submit
         </button>
       </form>
