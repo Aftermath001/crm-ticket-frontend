@@ -1,6 +1,7 @@
 import './App.css';
 import Layout from './layout/Layout';
 import AddTicket from './pages/new-ticket/AddTicket';
+import TicketListing from './pages/ticket-listing/TicketListing';
 // import Dashboard from './pages/dashboard/Dashboard';
 
 // eslint-disable-next-line
@@ -13,7 +14,8 @@ function App() {
       {/* <Entrypage /> */}
       <Layout>
         {/* <Dashboard/> */}
-        <AddTicket />
+        {/* <AddTicket /> */}
+        <TicketListing />
       </Layout>
     </div>
   );
