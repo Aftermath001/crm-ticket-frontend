@@ -4,7 +4,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import SearchForm from '../../components/searchForm/SearchForm';
 import tickets from '../../assets/data/dummy.json';
 import TicketTable from '../../components/ticket-table/TicketTable';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './ticketListings.css'; // Import CSS file
 
 const TicketListing = () => {
