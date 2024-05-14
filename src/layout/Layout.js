@@ -6,13 +6,9 @@ import Footer from './partials/Footer'
 function Layout({children}) {
   return (
     <div className='layout'>
-     
       <Header />
       <Outlet />
-      <Footer />
-      
-      
-      
+      <Footer /> 
     </div>
   )
 }

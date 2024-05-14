@@ -16,8 +16,8 @@ function App() {
             <Route index element={<Entrypage/>}/>
             <Route path='dashboard' element={<Dashboard/>}/>
             <Route path='addticket' element={<AddTicket />}/>
-            <Route path='ticketlisting' element={<TicketListing />}/>
-            <Route path='ticket' element={<Ticket />}/>
+            <Route path='tickets' element={<TicketListing />}/>
+            <Route path='ticket/:id' element={<Ticket />}/>
           </Route>
         </Routes>
       </BrowserRouter>
